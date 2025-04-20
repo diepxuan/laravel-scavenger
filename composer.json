@@ -1,0 +1,37 @@
+{
+  "name": "diepxuan/laravel-scavenger",
+  "description": "The integrated web scraper package for Laravel.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tran Ngoc Duc",
+      "email": "ductn@diepxuan.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Diepxuan\\Catalog\\Providers\\CatalogServiceProvider"
+      ],
+      "aliases": {}
+    }
+  },
+  "require": {
+    "ext-iconv": "*",
+    "ext-json": "*",
+    "ext-dom": "*"
+  },
+  "autoload": {
+    "files": [
+      "helpers.php"
+    ],
+    "psr-4": {
+      "Diepxuan\\Scavenger\\": "src/",
+      "Diepxuan\\Scavenger\\Database\\Factories\\": "database/factories/",
+      "Diepxuan\\Scavenger\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
